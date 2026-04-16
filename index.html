@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>A Tribute to My Sister</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,700&family=Montserrat:wght@300;400;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root { --gold: #d4af37; --dark: #0a0a0b; }
+        body { font-family: 'Montserrat', sans-serif; background: var(--dark); color: #e5e7eb; overflow-x: hidden; }
+        .serif { font-family: 'Playfair Display', serif; }
+        .fancy { font-family: 'Dancing Script', cursive; }
+        
+        .glass-box { 
+            background: rgba(255, 255, 255, 0.03); 
+            backdrop-filter: blur(20px); 
+            border: 1px solid rgba(255, 255, 255, 0.08); 
+            border-radius: 40px; 
+        }
+
+        .text-gradient {
+            background: linear-gradient(to right, #fff, #d4af37);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Animated Background Particles */
+        #bg-canvas { position: fixed; top: 0; left: 0; z-index: -1; }
+    </style>
+</head>
+<body>
+
+    <canvas id="bg-canvas"></canvas>
+
+    <nav class="fixed top-0 w-full z-50 p-6 flex justify-center space-x-8 text-[10px] tracking-[0.3em] uppercase opacity-70">
+        <a href="#intro" class="hover:text-yellow-500 transition">Introduction</a>
+        <a href="#tribute" class="hover:text-yellow-500 transition">The Tribute</a>
+        <a href="#letter" class="hover:text-yellow-500 transition text-yellow-500">The Message</a>
+    </nav>
+
+    <section id="intro" class="min-h-screen flex flex-col items-center justify-center text-center px-6">
+        <div class="gs_reveal">
+            <h2 class="text-sm uppercase tracking-[0.5em] mb-4 text-yellow-600">Established Excellence</h2>
+            <h1 class="text-6xl md:text-8xl serif italic text-gradient mb-6">Happy Birthday, Sister</h1>
+            <p class="max-w-xl mx-auto text-gray-400 leading-relaxed font-light">
+                Today is not merely a date on the calendar; it is a celebration of a journey defined by grace, resilience, and the quiet strength you provide to everyone around you.
+            </p>
+        </div>
+        <div class="mt-20 animate-bounce opacity-30">SCROLL DOWN</div>
+    </section>
+
+    <section id="tribute" class="min-h-screen py-32 px-8">
+        <div class="max-w-4xl mx-auto space-y-40">
+            
+            <div class="gs_reveal gs_reveal_fromLeft flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2 overflow-hidden rounded-3xl shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1530103043960-ef38714abb15?q=80&w=800" class="hover:scale-110 transition duration-1000">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-3xl serif italic mb-6 text-yellow-500">The Light You Carry</h3>
+                    <p class="text-lg leading-relaxed text-gray-300 font-light">
+                        I have spent many years observing the way you move through the world. It is rare to find someone who manages to be both the anchor in a storm and the wind that pushes us forward. You have a way of seeing the best in people, even when they cannot see it in themselves.
+                    </p>
+                </div>
+            </div>
+
+            <div class="gs_reveal gs_reveal_fromRight flex flex-col md:flex-row-reverse items-center gap-12">
+                <div class="md:w-1/2 overflow-hidden rounded-3xl shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1516062423079-7ca13cdc7f5a?q=80&w=800" class="hover:scale-110 transition duration-1000">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-3xl serif italic mb-6 text-yellow-500">The Wisdom of a Mentor</h3>
+                    <p class="text-lg leading-relaxed text-gray-300 font-light">
+                        Thank you for the countless times you’ve listened without judgment and advised without ego. As an elder sister, your influence has shaped my understanding of integrity. You’ve taught me that kindness is not a weakness, but the highest form of intelligence.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="min-h-screen py-20 px-6 bg-white/5">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-4xl serif italic mb-20 gs_reveal">My Sincere Wishes For Your New Year</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass-box p-10 gs_reveal" data-delay="0.1">
+                    <h4 class="text-yellow-500 font-bold mb-4 uppercase tracking-tighter">Quiet Peace</h4>
+                    <p class="text-sm leading-loose">May you find moments of absolute stillness where your soul can rest and recharge, away from the noise of the world.</p>
+                </div>
+                <div class="glass-box p-10 gs_reveal" data-delay="0.3">
+                    <h4 class="text-yellow-500 font-bold mb-4 uppercase tracking-tighter">Great Achievement</h4>
+                    <p class="text-sm leading-loose">May the hard work you’ve quietly put in over the years finally bloom into the recognition and success you deserve.</p>
+                </div>
+                <div class="glass-box p-10 gs_reveal" data-delay="0.5">
+                    <h4 class="text-yellow-500 font-bold mb-4 uppercase tracking-tighter">Infinite Joy</h4>
+                    <p class="text-sm leading-loose">May laughter find you in unexpected places, and may you always be surrounded by those who cherish your presence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="letter" class="min-h-screen flex items-center justify-center p-6 relative">
+        <div class="glass-box p-12 md:p-20 max-w-3xl text-center border-t-2 border-yellow-600 gs_reveal">
+            <h2 class="text-4xl fancy text-yellow-500 mb-8">Dear Sister,</h2>
+            <div class="text-xl serif leading-relaxed italic text-gray-100 space-y-6">
+                <p>"If I could give you one gift for your birthday, it would be the ability to see yourself through my eyes. Only then would you realize how truly magnificent you are."</p>
+                <p>"Thank you for the sacrifices you’ve made and the love you’ve given so freely. You are more than a sister; you are a beacon. I hope today brings you even a fraction of the happiness you have brought into my life."</p>
+            </div>
+            <p class="mt-12 text-xs tracking-[0.5em] uppercase opacity-50">— With Sincere Respect & Love —</p>
+        </div>
+    </section>
+
+    <section class="h-screen flex flex-col items-center justify-center text-center">
+        <h2 class="text-6xl serif italic mb-10 gs_reveal">May the party begin.</h2>
+        <button onclick="superPop()" class="px-12 py-5 border border-yellow-600 text-yellow-500 rounded-full font-bold hover:bg-yellow-600 hover:text-black transition-all duration-500 tracking-widest active:scale-95">
+            LAUNCH CELEBRATION 🎉
+        </button>
+    </section>
+
+    <footer class="p-10 text-center text-[10px] tracking-[0.4em] opacity-30">
+        DEDICATED TO AN EXCEPTIONAL SISTER | 2026
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        // 1. Background Animation (Floating Stars)
+        const canvas = document.getElementById('bg-canvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        let stars = [];
+
+        function initStars() {
+            for (let i = 0; i < 100; i++) {
+                stars.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    size: Math.random() * 2,
+                    speed: Math.random() * 0.5 + 0.2
+                });
+            }
+        }
+
+        function drawStars() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = "rgba(212, 175, 55, 0.3)";
+            stars.forEach(s => {
+                ctx.beginPath();
+                ctx.arc(s.x, s.y, s.size, 0, Math.PI * 2);
+                ctx.fill();
+                s.y -= s.speed;
+                if (s.y < 0) s.y = canvas.height;
+            });
+            requestAnimationFrame(drawStars);
+        }
+        initStars();
+        drawStars();
+
+        // 2. Reveal Animations
+        function animateFrom(elem) {
+            let x = 0, y = 50;
+            if(elem.classList.contains("gs_reveal_fromLeft")) { x = -100; y = 0; }
+            if(elem.classList.contains("gs_reveal_fromRight")) { x = 100; y = 0; }
+            
+            gsap.fromTo(elem, {x: x, y: y, opacity: 0}, {
+                duration: 2, 
+                x: 0, y: 0, 
+                opacity: 1, 
+                ease: "expo", 
+                overwrite: "auto",
+                delay: elem.getAttribute('data-delay') || 0
+            });
+        }
+
+        document.querySelectorAll(".gs_reveal").forEach(function(elem) {
+            ScrollTrigger.create({
+                trigger: elem,
+                start: "top 85%",
+                onEnter: function() { animateFrom(elem) }
+            });
+        });
+
+        // 3. Gold Confetti
+        function superPop() {
+            const end = Date.now() + 5000;
+            const colors = ['#d4af37', '#ffffff', '#e5e7eb'];
+
+            (function frame() {
+                confetti({
+                    particleCount: 3,
+                    angle: 60,
+                    spread: 55,
+                    origin: { x: 0 },
+                    colors: colors
+                });
+                confetti({
+                    particleCount: 3,
+                    angle: 120,
+                    spread: 55,
+                    origin: { x: 1 },
+                    colors: colors
+                });
+
+                if (Date.now() < end) requestAnimationFrame(frame);
+            }());
+        }
+    </script>
+</body>
+</html>
