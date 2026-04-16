@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A Tribute | Entrance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <nav class="fixed top-0 w-full z-50 p-6 flex justify-center space-x-10 uppercase">
+        <a href="index.html" class="nav-link font-bold">Introduction</a>
+        <a href="wisdom.html" class="nav-link">The Foundation</a>
+        <a href="growth.html" class="nav-link">Growth</a>
+        <a href="letter.html" class="nav-link">Formal Wishes</a>
+        <a href="finale.html" class="nav-link">Finale</a>
+    </nav>
+
+    <section class="h-screen flex items-center justify-center bg-[url('https://images.unsplash.com/photo-1518005020251-58296d8f8b4d?q=80&w=2000')] bg-cover bg-center">
+        <div class="absolute inset-0 bg-black/30"></div>
+        <div id="content" class="z-10 glass-card p-16 text-center max-w-3xl mx-4">
+            <h1 class="text-5xl serif italic mb-6">A Celebration of Excellence</h1>
+            <p class="text-lg tracking-wide opacity-80 mb-10">Dedicated to a presence that inspires through grace, intellect, and unwavering kindness.</p>
+            <a href="wisdom.html" class="btn-formal">ENTER THE EXPERIENCE</a>
+        </div>
+    </section>
+
+    <script>
+        gsap.from("#content", { opacity: 0, scale: 0.9, duration: 2, ease: "power2.out" });
+    </script>
+</body>
+</html>
