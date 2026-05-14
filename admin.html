@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Cyberpunk Admin Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+</head>
+<body>
+
+<canvas id="matrix"></canvas>
+
+<div class="scanlines"></div>
+
+<div class="container">
+
+<header>
+
+    <h1 class="glow">
+        ADMIN CONTROL PANEL
+    </h1>
+
+    <p class="subtitle">
+        Live Device Analytics Interface
+    </p>
+
+</header>
+
+<div class="grid">
+
+<div class="card">
+
+    <h2>VISITOR COUNT</h2>
+
+    <h1 id="visitorCount">0</h1>
+
+</div>
+
+<div class="card">
+
+    <h2>BROWSER DISTRIBUTION</h2>
+
+    <div id="browserStats"></div>
+
+</div>
+
+<div class="card">
+
+    <h2>OS DISTRIBUTION</h2>
+
+    <div id="osStats"></div>
+
+</div>
+
+<div class="card">
+
+    <h2>LIVE LOGS</h2>
+
+    <div id="logs"></div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>
