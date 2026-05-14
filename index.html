@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cyberpunk Device Dashboard</title>
+
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+
+</head>
+<body>
+
+<canvas id="matrix"></canvas>
+
+<div class="scanlines"></div>
+
+<div id="bootScreen" class="boot-screen">
+    <div class="terminal-text" id="terminalText"></div>
+</div>
+
+<div class="container hidden" id="mainContainer">
+
+<header>
+
+    <h1 class="glow">DEVICE INTELLIGENCE</h1>
+
+    <p class="subtitle">
+        Cyberpunk Browser Analytics Interface
+    </p>
+
+</header>
+
+<div class="grid">
+
+<div class="card">
+    <h2>DEVICE INFO</h2>
+    <div id="deviceInfo"></div>
+</div>
+
+<div class="card">
+    <h2>BATTERY</h2>
+    <div id="batteryInfo"></div>
+</div>
+
+<div class="card">
+    <h2>NETWORK</h2>
+    <div id="networkInfo"></div>
+</div>
+
+<div class="card">
+
+    <h2>LOCATION</h2>
+
+    <button id="locationBtn">
+        REQUEST LOCATION
+    </button>
+
+    <div id="locationInfo"></div>
+
+</div>
+
+<div class="card">
+    <h2>PERMISSIONS</h2>
+    <div id="permissionsInfo"></div>
+</div>
+
+<div class="card">
+    <h2>ORIENTATION</h2>
+    <div id="orientationInfo"></div>
+</div>
+
+<div class="card">
+    <h2>PERFORMANCE</h2>
+    <div id="performanceInfo"></div>
+</div>
+
+<div class="card">
+    <h2>QR SHARE</h2>
+    <canvas id="qrCanvas"></canvas>
+</div>
+
+</div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
